@@ -1,6 +1,6 @@
 # Sistem Informasi GoLang
 
-Proyek ini adalah sebuah aplikasi RESTful API yang dibangun menggunakan Go dengan framework Gin. Aplikasi ini menyediakan fitur untuk mengelola pengguna dan item dalam basis data, termasuk registrasi, login, dan manajemen item.
+Proyek ini adalah sebuah aplikasi RESTful API yang dibangun menggunakan Go dengan framework Fiber. Aplikasi ini menyediakan fitur untuk mengelola pengguna dan item dalam basis data, termasuk registrasi, login, dan manajemen item.
 
 ## Struktur Folder
 
@@ -34,11 +34,11 @@ Sistem-Infromasi_GoLang/
 
 ## Deskripsi File
 
-`main.go`
+**`main.go`**
 
 File utama yang menjalankan aplikasi. Mengatur koneksi ke database dan mendefinisikan rute-rute API.
 
-`controllers/`
+**`controllers/`**
 
 Berisi logika kontrol untuk menangani permintaan HTTP. Terdapat tiga file controller:
 
@@ -46,20 +46,20 @@ Berisi logika kontrol untuk menangani permintaan HTTP. Terdapat tiga file contro
 - item_controller.go: Mengelola item yang dimiliki pengguna.
 - user_controller.go: Mengelola informasi pengguna.
 
-`models/`
+**`models/`**
 
 Berisi definisi model untuk pengguna dan item:
 
 - item_model.go: Model untuk item.
 - user_model.go: Model untuk pengguna.
 
-`middlewares/`
+**`middlewares/`**
 
 Berisi middleware untuk autentikasi:
 
 - auth_middleware.go: Memeriksa token JWT untuk setiap permintaan yang membutuhkan autentikasi.
 
-`services/`
+**`services/`**
 
 Berisi logika bisnis yang berinteraksi dengan model:
 
@@ -67,14 +67,14 @@ Berisi logika bisnis yang berinteraksi dengan model:
 - item_service.go: Mengelola logika untuk item.
 - user_service.go: Mengelola logika untuk pengguna.
 
-`utils/`
+**`utils/`**
 
 Berisi fungsi utilitas seperti pengelolaan token JWT dan hashing password:
 
 - jwt.go: Mengelola pembuatan dan validasi token JWT.
 - password.go: Mengelola hashing password.
 
-`tests/`
+**`tests/`**
 
 Berisi pengujian unit untuk memastikan fungsionalitas aplikasi:
 
